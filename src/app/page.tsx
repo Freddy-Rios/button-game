@@ -1,11 +1,15 @@
 import Image from "next/image";
 
+const data = { Germany: "Berlin", azerbaijan: "Baku" };
+
+function ButtonGame({ data }: { data: Record<string, string> }) {
+  return <>hello world? part two</>;
+}
+
 export default function Home() {
   return (
     <>
-      <main>
-        <h1>Hello World?</h1>
-      </main>
+      <ButtonGame data={data} />
     </>
   );
 }
